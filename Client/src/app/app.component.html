@@ -1,0 +1,28 @@
+<header class="bg-indigo-500 py-4 px-6 flex items-center justify-between">
+    <div class="flex items-center">
+        <a href="#" class="text-white font-bold text-2xl">CrickWik</a>
+    </div>
+    <nav class="hidden md:block">
+        <ul class="flex space-x-6">
+            <li><a [routerLink]="'/home'" href="#" class="text-white hover:text-green-300">Home</a></li>
+            <li><a [routerLink]="'/live'" href="#" class="text-white hover:text-green-300">Live Matches</a></li>
+            <li><a [routerLink]="'/history'" href="#" class="text-white hover:text-green-300">History</a></li>
+            <li><a [routerLink]="'/point-table'" href="#" class="text-white hover:text-green-300">PointTable</a></li>
+        </ul>
+    </nav>
+    <div></div>
+    <div class="md:hidden">
+        <button class="text-white hover:text-green-300 focus:outline-none">
+            <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M3 5h18a1 1 0 0 1 0 2H3a1 1 0 1 1 0-2zm0 6h18a1 1 0 0 1 0 2H3a1 1 0 0 1 0-2zm0 6h18a1 1 0 0 1 0 2H3a1 1 0 0 1 0-2z" clip-rule="evenodd"></path>
+            </svg>
+        </button>
+    </div>
+</header>
+
+
+<div class="px-28 py-8">
+    <router-outlet></router-outlet>
+</div>
+
+
